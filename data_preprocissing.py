@@ -49,8 +49,7 @@ class Data:
         Y = self.data[self.target_column]
         X = self.data.drop(self.target_column , axis=1)
         X_tarin,X_test,Y_train,Y_test = train_test_split(X,Y,train_size=0.7,stratify=Y)
-        X_val,X_test,Y_val,Y_test = train_test_split(X_test , Y_test , train_size=0.5,stratify=Y_test)
-        return X_tarin,X_test,X_val,Y_train,Y_test,Y_val
+        return X_tarin,X_test,Y_train,Y_test
     
         
     

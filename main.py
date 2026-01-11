@@ -1,12 +1,8 @@
-from data_preprocissing import Data
-obj_data = Data("/home/yahya-bouchak/projet_ml/data/TrafficTwoMonth.csv" , "Traffic Situation")
-obj_data.info()
-print("*"*40)
-X_tarin,X_test,X_val,Y_train,Y_test,Y_val = obj_data.split_data()
-print(f"x_train : {X_tarin.shape}")
-print("*"*40)
-print(Y_val.shape)
-print(Y_val.head())
-print("*"*40)
-print(X_val.shape)
-print(X_val.head())
+from models import Models
+
+model = Models(
+    "/home/yahya-bouchak/projet_ml/data/TrafficTwoMonth.csv",
+    "Traffic Situation"
+)
+
+model.train_models()
