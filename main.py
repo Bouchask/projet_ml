@@ -5,4 +5,5 @@ model = Models(
     "Traffic Situation"
 )
 
-model.train_models()
+score = model.train_models()
+print(score)
