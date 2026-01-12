@@ -1,9 +1,10 @@
 from sklearn.ensemble import VotingClassifier,RandomForestClassifier
-from data_preprocissing import Data 
+from data_preprocissing import Data
 from sklearn.linear_model import  LogisticRegression
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import GridSearchCV
 import pandas as pd
 import numpy as np 
 class Models :
