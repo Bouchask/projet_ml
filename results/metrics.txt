@@ -1,0 +1,180 @@
+Model: LR_PCA
+Accuracy: 0.8818589025755879
+Precision: 0.8240459779664691
+Recall: 0.7700429126915144
+F1-score: 0.79241862282666
+
+              precision    recall  f1-score   support
+
+       heavy       0.95      0.97      0.96       341
+        high       0.64      0.46      0.54       112
+         low       0.81      0.71      0.76       250
+      normal       0.89      0.94      0.91      1083
+
+    accuracy                           0.88      1786
+   macro avg       0.82      0.77      0.79      1786
+weighted avg       0.88      0.88      0.88      1786
+
+--------------------------------------------------
+Model: SVM_PCA
+Accuracy: 0.9277715565509519
+Precision: 0.9023975800731558
+Recall: 0.8542940720666461
+F1-score: 0.8739852307685572
+
+              precision    recall  f1-score   support
+
+       heavy       0.91      0.96      0.94       341
+        high       0.83      0.62      0.71       112
+         low       0.92      0.88      0.90       250
+      normal       0.94      0.96      0.95      1083
+
+    accuracy                           0.93      1786
+   macro avg       0.90      0.85      0.87      1786
+weighted avg       0.93      0.93      0.93      1786
+
+--------------------------------------------------
+Model: KNN_PCA
+Accuracy: 0.9176931690929452
+Precision: 0.8786399701722283
+Recall: 0.8518969269233433
+F1-score: 0.8629044985242698
+
+              precision    recall  f1-score   support
+
+       heavy       0.87      0.95      0.91       341
+        high       0.78      0.63      0.70       112
+         low       0.92      0.88      0.90       250
+      normal       0.94      0.95      0.95      1083
+
+    accuracy                           0.92      1786
+   macro avg       0.88      0.85      0.86      1786
+weighted avg       0.92      0.92      0.92      1786
+
+--------------------------------------------------
+Model: LR_LDA
+Accuracy: 0.8661814109742442
+Precision: 0.8002709673881176
+Recall: 0.7302713111881417
+F1-score: 0.7535409374450514
+
+              precision    recall  f1-score   support
+
+       heavy       0.89      0.94      0.91       341
+        high       0.62      0.34      0.44       112
+         low       0.81      0.70      0.75       250
+      normal       0.88      0.93      0.91      1083
+
+    accuracy                           0.87      1786
+   macro avg       0.80      0.73      0.75      1786
+weighted avg       0.86      0.87      0.86      1786
+
+--------------------------------------------------
+Model: SVM_LDA
+Accuracy: 0.8936170212765957
+Precision: 0.8385690473190074
+Recall: 0.7851018584333189
+F1-score: 0.8042807186157864
+
+              precision    recall  f1-score   support
+
+       heavy       0.87      0.95      0.91       341
+        high       0.68      0.44      0.53       112
+         low       0.89      0.81      0.85       250
+      normal       0.92      0.94      0.93      1083
+
+    accuracy                           0.89      1786
+   macro avg       0.84      0.79      0.80      1786
+weighted avg       0.89      0.89      0.89      1786
+
+--------------------------------------------------
+Model: KNN_LDA
+Accuracy: 0.8924972004479284
+Precision: 0.8318647584083956
+Recall: 0.7977154421881993
+F1-score: 0.8120404161868697
+
+              precision    recall  f1-score   support
+
+       heavy       0.90      0.94      0.92       341
+        high       0.64      0.49      0.56       112
+         low       0.87      0.82      0.85       250
+      normal       0.91      0.93      0.92      1083
+
+    accuracy                           0.89      1786
+   macro avg       0.83      0.80      0.81      1786
+weighted avg       0.89      0.89      0.89      1786
+
+--------------------------------------------------
+Model: LR_SVD
+Accuracy: 0.8818589025755879
+Precision: 0.8251252939503766
+Recall: 0.7700429126915144
+F1-score: 0.7927170598251783
+
+              precision    recall  f1-score   support
+
+       heavy       0.95      0.97      0.96       341
+        high       0.65      0.46      0.54       112
+         low       0.81      0.71      0.75       250
+      normal       0.89      0.94      0.91      1083
+
+    accuracy                           0.88      1786
+   macro avg       0.83      0.77      0.79      1786
+weighted avg       0.88      0.88      0.88      1786
+
+--------------------------------------------------
+Model: SVM_SVD
+Accuracy: 0.9400895856662934
+Precision: 0.9187244245080122
+Recall: 0.8793855837405676
+F1-score: 0.8969660763694853
+
+              precision    recall  f1-score   support
+
+       heavy       0.93      0.96      0.95       341
+        high       0.85      0.71      0.77       112
+         low       0.94      0.88      0.91       250
+      normal       0.95      0.97      0.96      1083
+
+    accuracy                           0.94      1786
+   macro avg       0.92      0.88      0.90      1786
+weighted avg       0.94      0.94      0.94      1786
+
+--------------------------------------------------
+Model: DTREE
+Accuracy: 0.9994400895856663
+Precision: 0.9997693726937269
+Recall: 0.999
+F1-score: 0.999383631129356
+
+              precision    recall  f1-score   support
+
+       heavy       1.00      1.00      1.00       341
+        high       1.00      1.00      1.00       112
+         low       1.00      1.00      1.00       250
+      normal       1.00      1.00      1.00      1083
+
+    accuracy                           1.00      1786
+   macro avg       1.00      1.00      1.00      1786
+weighted avg       1.00      1.00      1.00      1786
+
+--------------------------------------------------
+Model: RF
+Accuracy: 0.9977603583426652
+Precision: 0.9980805935353959
+Recall: 0.9963061766257749
+F1-score: 0.9971852470936792
+
+              precision    recall  f1-score   support
+
+       heavy       0.99      1.00      1.00       341
+        high       1.00      0.99      1.00       112
+         low       1.00      1.00      1.00       250
+      normal       1.00      1.00      1.00      1083
+
+    accuracy                           1.00      1786
+   macro avg       1.00      1.00      1.00      1786
+weighted avg       1.00      1.00      1.00      1786
+
+--------------------------------------------------

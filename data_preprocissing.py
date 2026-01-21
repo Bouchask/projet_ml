@@ -3,8 +3,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
-from sklearn.decomposition import PCA, TruncatedSVD
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 import pandas as pd
 import numpy as np 
 
@@ -63,21 +61,3 @@ class Data:
 
         return X_train_processed, X_test_processed, Y_train, Y_test
 
-    def get_data_pca(self, X_train, X_test):
-        pca = PCA(n_components=2)
-        X_train_pca = pca.fit_transform(X_train)
-        X_test_pca = pca.transform(X_test)
-        return X_train_pca, X_test_pca
-
-    def get_data_lda(self, X_train, X_test, Y_train):
-        # LDA requires Y_train!
-        lda = LinearDiscriminantAnalysis(n_components=2)
-        X_train_lda = lda.fit_transform(X_train, Y_train)
-        X_test_lda = lda.transform(X_test)
-        return X_train_lda, X_test_lda
-
-    def get_data_svd(self, X_train, X_test):
-        svd = TruncatedSVD(n_components=2)
-        X_train_svd = svd.fit_transform(X_train)
-        X_test_svd = svd.transform(X_test)
-        return X_train_svd, X_test_svd
