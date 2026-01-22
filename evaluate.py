@@ -1,6 +1,8 @@
 from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score,confusion_matrix,classification_report
 import matplotlib.pyplot as plt
 import os
+import joblib
+
 class Evaluator:
     def __init__(self, X_test,Y_test):
         self.X_test = X_test
@@ -74,5 +76,13 @@ class Evaluator:
                 f.write("\n")
                 f.write(res["classification_report"])
                 f.write("\n" + "-"*50 + "\n")
+    def save_models(self, list_result_pipelines):
+        if not os.path.exists("models"):
+            os.makedirs("models")
+
+        for name, pipe in list_result_pipelines.items():
+            model = pipe["best_model"]
+            path = f"models/{name}.joblib"
+            joblib.dump(model, path)
 
     

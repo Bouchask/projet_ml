@@ -15,3 +15,4 @@ results = optimizer.run(X_train, y_train)
 
 evaluator = Evaluator(X_test, y_test)
 evaluator.plot(results)
+evaluator.save_models(results)
